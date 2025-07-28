@@ -30,7 +30,7 @@ img {
 
 /* === ХЕРО === */
 .hero {
-    background: url(img_foto.JPG) no-repeat center center/cover;
+    background: url(img/img_foto.JPG) no-repeat center center/cover;
     height: 100vh;
     color: #000;
     display: flex;
