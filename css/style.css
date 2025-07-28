@@ -30,7 +30,7 @@ img {
 
 /* === ХЕРО === */
 .hero {
-    background: url(https://github.com/Viktor1114/alexandra_bosco/blob/main/img/img_foto.jpg) no-repeat center center/cover;
+    background: url(alexandra_bosco/blob/main/img/img_foto.jpg) no-repeat center center/cover;
     height: 100vh;
     color: #000;
     display: flex;
