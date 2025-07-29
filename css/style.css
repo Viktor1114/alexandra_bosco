@@ -98,6 +98,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 5px;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
