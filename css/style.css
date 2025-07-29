@@ -98,7 +98,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 0;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
