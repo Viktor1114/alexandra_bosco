@@ -120,7 +120,7 @@ img {
 }
 .gallery-container {
     position: relative;
-    width: 500px; /* Примерная ширина */
+    width: auto; /* Примерная ширина */
     margin: 0 auto;
 }
 
