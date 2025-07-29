@@ -125,8 +125,10 @@ img {
 }
 
 .gallery {
-    display: flex;
-    overflow: hidden; /* Скрываем все изображения кроме активного */
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
 }
 
 .gallery img {
