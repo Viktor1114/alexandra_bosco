@@ -107,17 +107,8 @@ img {
 }
 
 /* === ГАЛЕРЕЯ === */
-.gallery {
-    overflow: hidden;
-    padding: 40px 0;
-}
 .gallery h2 {
     text-align: center;
-}
-.gallery-track {
-    display: flex;
-    animation: scroll 30s linear infinite;
-    gap: 20px;
 }
 .gallery-track img {
     width: 300px;
