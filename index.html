@@ -36,34 +36,63 @@
         <section class="intro">
             <h2>Преображение начинается здесь</h2>
             <p>Премиальные услуги по наращиванию волос и ресниц от мастера Alexandra Bosco. Индивидуальный подход, сертифицированные материалы, гарантированный результат.</p>
+            <h2>Услуги</h2>
         </section>
 
         <section class="services">
-            <h2>Услуги</h2>
             <div class="service">
                 <img src="./img/New_Look.gif" alt="Наращивание волос">
                 <div class="info">
-                    <h3>Наращивание волос</h3>
                     <p>Тщательно подобранные натуральные волосы. Микрокапсулы и капсульное наращивание. Подходит для любого типа волос.</p>
                 </div>
             </div>
             <div class="service">
                 <img src="./img/Signature.gif" alt="Наращивание ресниц">
                 <div class="info">
-                    <h3>Наращивание ресниц</h3>
                     <p>Классическое и объемное наращивание. Индивидуальная длина, изгиб и эффект. Безопасность и комфорт гарантированы.</p>
                 </div>
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery-container">
             <h2>Галерея работ</h2>
-            <div class="gallery-track">
+            <div class="gallery">
                 <img src="./img/Gallery1.jpg" alt="Работа 1">
                 <img src="./img/Gallery2.jpg" alt="Работа 2">
                 <img src="./img/Gallery3.jpg" alt="Работа 3">
                 <img src="./img/Gallery4.jpg" alt="Работа 4">
             </div>
+            <button class="prev">&#10094</button>
+            <button class="next">&#10095</button>
+            <script>
+                const gallery = document.querySelector('.gallery');
+                const images = gallery.querySelectorAll('img');
+                const prevButton = document.querySelector('.prev');
+                const nextButton = document.querySelector('.next');
+                let currentIndex = 0;
+
+                function showImage(index) {
+                    images.forEach((img, i) => {
+                        img.style.display = i === index ? 'block' : 'none';
+                    });
+                }
+
+                function nextImage() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showImage(currentIndex);
+                }
+
+                function prevImage() {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showImage(currentIndex);
+                }
+
+                prevButton.addEventListener('click', prevImage);
+                nextButton.addEventListener('click', nextImage);
+
+                // Инициализация
+                showImage(currentIndex);
+            </script>
         </section>
 
         <section class="courses">
@@ -79,11 +108,12 @@
         </section>
 
         <section class="calculator">
+            <h2>Калькулятор услуг</h2>
             <div class="uCalc_469670"></div>
             <script> var widgetOptions469670 = { bg_color: "transparent" }; 
             (function() { var a = document.createElement("script"), h = "head"; 
             a.async = true; 
-            a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=469670&t="+Math.floor(new Date()/18e5); 
+            a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=469670&t="+Math.floor(new Date()/18e5);
             document.getElementsByTagName(h)[0].appendChild(a) })();
 
             </script>
@@ -128,5 +158,6 @@
         }
     </script>
 
-</body>
+    
+
 </html>
