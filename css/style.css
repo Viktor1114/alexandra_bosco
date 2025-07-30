@@ -36,7 +36,7 @@ img {
 /* === ХЕРО === */
 .hero {
     background: url(../img/img_foto.jpg) no-repeat center center/cover;
-    max-width: 1200px;
+    max-width: auto;
     height: 100vh;
     color: #000;
     display: flex;
