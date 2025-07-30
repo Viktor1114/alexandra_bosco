@@ -7,6 +7,12 @@ body {
     margin: 0;
     padding: 0;
 }
+html, body, .stage, .ring, .img {
+    width:100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    user-select:none;
+}
 h1, h2, h3 {
     margin-bottom: 15px;
     color: #222;
@@ -39,7 +45,7 @@ img {
     padding: 40px 20px;
 }
 .hero-content {
-    color: #fff;
+    -webkit-text-fill-color: white;
     font-weight: 100;
     font-size: 60px;
     text-align: right;
@@ -69,6 +75,8 @@ img {
 /* === УСЛУГИ === */
 .services {
     display: flex;
+    max-width: 900px;
+    padding-left: 150px;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
@@ -89,7 +97,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.700);
     color: white;
     width: 100%;
     height: 100%;
@@ -103,6 +111,43 @@ img {
     transition: all 0.3s ease;
 }
 .service:hover .info {
+    display: flex;
+}
+.title-eyelashes {
+    padding-left: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.service-eyelashes {
+    position: relative;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.service-eyelashes img {
+    display: flex;
+    margin-bottom: -25px;
+    border-radius: 10px;
+}
+.service-eyelashes .info-eyelashes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.664);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.service-eyelashes:hover .info-eyelashes {
     display: flex;
 }
 
@@ -180,8 +225,8 @@ img {
     padding: 30px 0;
 }
 .courses details {
-    background: #fff;
-    border: 1px solid #ccc;
+    background: #ffffff;
+    border: 1px solid #cccccc00;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 10px;
@@ -192,25 +237,7 @@ img {
 }
 
 /* === ОТЗЫВЫ === */
-.reviews {
-    padding: 40px 0;
-    background: #f3f3f3;
-    text-align: center;
-}
-.review {
-    max-width: 600px;
-    margin: 0 auto 30px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.review span {
-    display: block;
-    margin-top: 10px;
-    font-style: italic;
-    color: #777;
-}
+
 
 /* === КОНТАКТЫ === */
 .contacts {
@@ -232,6 +259,7 @@ img {
 .icon {
     width: 30px;
     height: 30px;
+    
 }
 
 /* === АДАПТИВ === */
