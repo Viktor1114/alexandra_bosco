@@ -166,6 +166,7 @@ img {
 .gallery-container {
     position: relative;
     width: 900px; /* Примерная ширина */
+    padding: 0;
     margin: 0 auto;
 }
 
