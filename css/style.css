@@ -76,6 +76,7 @@ img {
 .services {
     display: flex;
     max-width: 900px;
+    padding-left: 150px;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
