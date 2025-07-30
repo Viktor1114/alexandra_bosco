@@ -36,6 +36,7 @@ img {
 /* === ХЕРО === */
 .hero {
     background: url(../img/img_foto.jpg) no-repeat center center/cover;
+    max-width: 1200px;
     height: 100vh;
     color: #000;
     display: flex;
@@ -166,7 +167,7 @@ img {
     position: relative;
     padding-left: 200px;
     padding-right: 200px;
-    width: auto; /* Примерная ширина */
+    width: 500px; /* Примерная ширина */
     margin: 0 auto;
 }
 
