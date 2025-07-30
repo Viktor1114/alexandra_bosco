@@ -165,9 +165,7 @@ img {
 }
 .gallery-container {
     position: relative;
-    padding-left: 200px;
-    padding-right: 200px;
-    width: 500px; /* Примерная ширина */
+    width: 900px; /* Примерная ширина */
     margin: 0 auto;
 }
 
@@ -192,8 +190,8 @@ img {
     position: absolute;
     top: 50%;
     width: auto;
-    padding-left: 220px;
-    padding-right: 220px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-top: -22px;
     color: rgb(255, 255, 255);
     font-weight: bold;
