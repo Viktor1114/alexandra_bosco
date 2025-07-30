@@ -120,6 +120,8 @@ img {
 }
 .gallery-container {
     position: relative;
+    padding-left: 200px;
+    padding-right: 200px;
     width: auto; /* Примерная ширина */
     margin: 0 auto;
 }
@@ -145,7 +147,8 @@ img {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding-left: 220px;
+    padding-right: 220px;
     margin-top: -22px;
     color: rgb(255, 255, 255);
     font-weight: bold;
