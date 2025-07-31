@@ -167,7 +167,7 @@ img {
 }
 .gallery-track img {
     width: auto;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
     user-select: none;
