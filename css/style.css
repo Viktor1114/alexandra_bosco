@@ -161,13 +161,14 @@ img {
 }
 .gallery-track {
     display: flex;
-    width: max-content;
+    width: max-content
+    height: max-content;
     animation: scroll 40s linear infinite;
     cursor: grab;
 }
 .gallery-track img {
     width: auto;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
     user-select: none;
