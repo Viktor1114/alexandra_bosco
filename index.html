@@ -120,7 +120,7 @@
 
         <section class="gallery-container">
             <h2>Галерея работ</h2>
-            <div class="gallery">
+            <div class="gallery-track">
                 <img src="./img/Gallery1.jpg" alt="Работа 1">
                 <img src="./img/Gallery2.jpg" alt="Работа 2">
                 <img src="./img/Gallery3.jpg" alt="Работа 3">
@@ -128,37 +128,63 @@
                 <img src="./img/Gallery5.jpg" alt="Работа 5">
                 <img src="./img/Gallery6.jpg" alt="Работа 6">
                 <img src="./img/Gallery7.jpg" alt="Работа 7">
+                <img src="./img/Gallery1.jpg" alt="Работа 1-2">
+                <img src="./img/Gallery2.jpg" alt="Работа 2-2">
+                <img src="./img/Gallery3.jpg" alt="Работа 3-2">
+                <img src="./img/Gallery4.jpg" alt="Работа 4-2">
+                <img src="./img/Gallery5.jpg" alt="Работа 5-2">
+                <img src="./img/Gallery6.jpg" alt="Работа 6-2">
+                <img src="./img/Gallery7.jpg" alt="Работа 7-2">
             </div>
-            <button class="prev">&#10094</button>
-            <button class="next">&#10095</button>
+            
             <script>
-                const gallery = document.querySelector('.gallery');
-                const images = gallery.querySelectorAll('img');
-                const prevButton = document.querySelector('.prev');
-                const nextButton = document.querySelector('.next');
-                let currentIndex = 0;
+                const track = document.getElementById("gallery-track");
 
-                function showImage(index) {
-                    images.forEach((img, i) => {
-                        img.style.display = i === index ? 'block' : 'none';
-                    });
-                }
+                let isDown = false;
+                let startX;
+                let scrollLeft;
 
-                function nextImage() {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    showImage(currentIndex);
-                }
+                track.addEventListener("mousedown", (e) => {
+                isDown = true;
+                track.classList.add("active");
+                startX = e.pageX - track.offsetLeft;
+                scrollLeft = track.scrollLeft;
+                });
 
-                function prevImage() {
-                    currentIndex = (currentIndex - 1 + images.length) % images.length;
-                    showImage(currentIndex);
-                }
+                track.addEventListener("mouseleave", () => {
+                isDown = false;
+                track.classList.remove("active");
+                });
 
-                prevButton.addEventListener('click', prevImage);
-                nextButton.addEventListener('click', nextImage);
+                track.addEventListener("mouseup", () => {
+                isDown = false;
+                track.classList.remove("active");
+                });
 
-                // Инициализация
-                showImage(currentIndex);
+                track.addEventListener("mousemove", (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - track.offsetLeft;
+                const walk = (x - startX) * 2;
+                track.scrollLeft = scrollLeft - walk;
+                });
+
+                track.addEventListener("touchstart", (e) => {
+                isDown = true;
+                startX = e.touches[0].pageX - track.offsetLeft;
+                scrollLeft = track.scrollLeft;
+                });
+
+                track.addEventListener("touchend", () => {
+                isDown = false;
+                });
+
+                track.addEventListener("touchmove", (e) => {
+                if (!isDown) return;
+                const x = e.touches[0].pageX - track.offsetLeft;
+                const walk = (x - startX) * 2;
+                track.scrollLeft = scrollLeft - walk;
+                });
             </script>
         </section>
 
