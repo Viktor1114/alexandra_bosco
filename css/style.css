@@ -157,12 +157,11 @@ img {
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: auto;
+    height: 890px;
 }
 .gallery-track {
     display: flex;
     width: max-content
-    height: max-content;
     animation: scroll 40s linear infinite;
     cursor: grab;
 }
