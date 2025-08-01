@@ -254,6 +254,7 @@ img {
     }
     .gallery-track img {
         width: 250px;
+        height: 250px;
     }
     .container {
         padding: 20px;
