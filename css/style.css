@@ -193,10 +193,10 @@ img {
 /* Адаптив */
 @media (max-width: 768px) {
   .gallery-container {
-    height: 200px;
+    height: 500px;
   }
   .gallery-track img {
-    height: 200px;
+    height: 500px;
   }
 }
 /* === КУРСЫ === */
