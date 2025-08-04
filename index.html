@@ -1,256 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandra Bosco | Студия наращивания волос и ресниц</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1">
+  <title>Alexandra Bosco | Студия наращивания волос и ресниц</title>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Твои стили -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="hero">
-        <h1 class="hero-content">Alexandra Bosco</h1>
-        <ul class="hero-item">
-            <li>
-                <a href="https://instagram.com/alexandra.bosco.o/" title="Инстаграм">
-                    <img src="./img/instagram.ico" alt="Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://t.me/alexandra_bosco" title="Телеграм">
-                    <img src="./img/telegram.ico" alt="Telegram">
-                </a>
-            </li>
-            <li>
-                <a href="tel:+79777013107" title="Позвонить">
-                    <img src="./img/call.ico" alt="Call">
-                </a>
-            </li>
-        </ul>
-    </header>
+  <!-- HERO -->
+  <header class="hero" data-aos="fade-down">
+    <h1 class="hero-content">Alexandra Bosco</h1>
+    <ul class="hero-item">
+      <li><a href="https://instagram.com/alexandra.bosco.o/" target="_blank"><img src="./img/instagram.ico" alt="Instagram"></a></li>
+      <li><a href="https://t.me/alexandra_bosco" target="_blank"><img src="./img/telegram.ico" alt="Telegram"></a></li>
+      <li><a href="tel:+79777013107"><img src="./img/call.ico" alt="Call"></a></li>
+    </ul>
+  </header>
 
-    <main class="container">
+  <main class="container">
+    <!-- Вступление -->
+    <section class="intro" data-aos="fade-up">
+      <h2>Преображение начинается здесь</h2>
+      <p>Премиальные услуги по наращиванию волос и ресниц от мастера Alexandra Bosco. Индивидуальный подход, сертифицированные материалы, гарантированный результат.</p>
+    </section>
 
-        <section class="intro">
-            <h2>Преображение начинается здесь</h2>
-            <p>Премиальные услуги по наращиванию волос и ресниц от мастера Alexandra Bosco. Индивидуальный подход, сертифицированные материалы, гарантированный результат.</p>
-            <h2>Услуги по наращиванию волос</h2>
-        </section>
+    <!-- Услуги — волосы -->
+    <section class="intro" data-aos="fade-up"><h2>Услуги по наращиванию волос</h2></section>
+    <section class="services">
+      <div class="service" data-aos="zoom-in"><img src="./img/New_Look.gif" alt="Наращивание волос"><div class="info"><a href="#"><p>Тщательно подобранные натуральные волосы...</p></a></div></div>
+      <div class="service" data-aos="zoom-in" data-aos-delay="100"><img src="./img/Signature.gif" alt="Наращивание волос"><div class="info"><a href="#"><p>Классическое и объемное наращивание...</p></a></div></div>
+      <div class="service" data-aos="zoom-in" data-aos-delay="200"><img src="./img/New_Look.gif" alt="Наращивание волос"><div class="info"><a href="#"><p>Повтор услуги...</p></a></div></div>
+    </section>
 
-        <section class="services">
-            <div class="service">
-                <img src="./img/New_Look.gif" alt="Наращивание волос">
-                <div class="info">
-                    <a href="https://dikidi.net/1883467?p=1.pi-si&o=13&s=20126573" target="_blank">
-                        <p>Тщательно подобранные натуральные волосы. Микрокапсулы и капсульное наращивание. Подходит для любого типа волос.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="service">
-                <img src="./img/Signature.gif" alt="Наращивание волос">
-                <div class="info">
-                    <a href="https://dikidi.net/1883467?p=1.pi-si&o=13&s=20126782" target="_blank">
-                        <p>Классическое и объемное наращивание. Индивидуальная длина, изгиб и эффект. Безопасность и комфорт гарантированы.</p>
-                    </a>
-                </div>
-            </div>
-            <div class="service">
-                <img src="./img/New_Look.gif" alt="Наращивание волос">
-                <div class="info">
-                    <a href="https://dikidi.net/1883467?p=1.pi-si&o=13&s=20126573" target="_blank">
-                        <p>Тщательно подобранные натуральные волосы. Микрокапсулы и капсульное наращивание. Подходит для любого типа волос.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
+    <!-- Услуги — ресницы -->
+    <section class="intro" data-aos="fade-up"><h2>Услуги по наращиванию ресниц</h2></section>
+    <section class="services">
+      <div class="service-eyelashes" data-aos="flip-left"><h4 class="title-eyelashes">Натуральный эффект (1‑2D)</h4><img src="./img/Eyelashes/eyelashes1.jpg" alt=""><div class="info-eyelashes"><a href="#"><p>LED‑наращивание ресниц...</p></a></div></div>
+      <div class="service-eyelashes" data-aos="flip-left" data-aos-delay="100"><h4 class="title-eyelashes">Трендовый эффект</h4><img src="./img/Eyelashes/eyelashes2.jpg" alt=""><div class="info-eyelashes"><a href="#"><p>Современная технология...</p></a></div></div>
+      <div class="service-eyelashes" data-aos="flip-left" data-aos-delay="200"><h4 class="title-eyelashes">Уголки</h4><img src="./img/Eyelashes/eyelashes3.jpg" alt=""><div class="info-eyelashes"><a href="#"><p>Акцент и выразительный взгляд...</p></a></div></div>
+      <div class="service-eyelashes" data-aos="flip-left" data-aos-delay="300"><h4 class="title-eyelashes">Яркий эффект (3‑5D)</h4><img src="./img/Eyelashes/eyelashes4.jpg" alt=""><div class="info-eyelashes"><a href="#"><p>Комфорт и стойкость...</p></a></div></div>
+      <div class="service-eyelashes" data-aos="flip-left" data-aos-delay="400"><h4 class="title-eyelashes">Express</h4><img src="./img/Eyelashes/eyelashes5.jpg" alt=""><div class="info-eyelashes"><a href="#"><p>Быстро, аккуратно...</p></a></div></div>
+    </section>
 
-        <section class="intro">
-            <h2>Услуги по наращиванию ресниц</h2>
-        </section>
+    <!-- Галерея -->
+    <section class="horizontal-gallery">
+      <h2>Галерея работ</h2>
 
-        <section class="services">
-            <div class="service-eyelashes">
-            <h4 class="title-eyelashes">Натуральный эффект (1-2D)</h4>
-                <img src="./img/Eyelashes/eyelashes1.jpg" alt="Наращивание ресниц">
-                <div class="info-eyelashes">
-                    <a href="https://dikidi.net/1883467?p=2.pi-ssm-si&s=20133551" target="_blank">
-                        <p>LED-наращивание ресниц идеальный выбор для тех, кто ценит современный подход, скорость, комфорт и результат, который держится</p>
-                    </a>
-                </div>
-            </div>
-            <div class="service-eyelashes">
-            <h4 class="title-eyelashes">Трендовый эффект</h4>
-                <img src="./img/Eyelashes/eyelashes2.jpg" alt="Наращивание ресниц">
-                <div class="info-eyelashes">
-                    <a href="https://dikidi.net/1883467?p=2.pi-ssm-si&s=20133559" target="_blank">
-                        <p>Самая современная технология, которая выводит комфорт и стойкость на новый уровень</p>
-                    </a>
-                </div>
-            </div>
-            <div class="service-eyelashes">
-            <h4 class="title-eyelashes">Уголки</h4>
-                <img src="./img/Eyelashes/eyelashes3.jpg" alt="Наращивание ресниц">
-                <div class="info-eyelashes">
-                    <a href="https://dikidi.net/1883467?p=2.pi-ssm-si&s=20139842" target="_blank">
-                        <p>Эффект мягкого акцента и выразительного взгляда</p>
-                    </a>
-                </div>
-            </div>
-            <div class="service-eyelashes">
-            <h4 class="title-eyelashes">Яркий эффект (3-5D)</h4>
-                <img src="./img/Eyelashes/eyelashes4.jpg" alt="Наращивание ресниц">
-                <div class="info-eyelashes">
-                    <a href="https://dikidi.net/1883467?p=2.pi-ssm-si&s=20133575" target="_blank">
-                        <p>Самая современная технология, которая выводит комфорт и стойкость на новый уровень</p>
-                    </a>
-                </div>
-            </div>
-            <div class="service-eyelashes">
-            <h4 class="title-eyelashes">Express</h4>
-                <img src="./img/Eyelashes/eyelashes5.jpg" alt="Наращивание ресниц">
-                <div class="info-eyelashes">
-                    <a href="https://dikidi.net/1883467?p=2.pi-ssm-si&s=20139814" target="_blank">
-                        <p>Быстро, аккуратно, эфектно. Идеальный вариант для тех, у кого мало времени, но хочется выглядеть свежо и ухоженно</p>
-                    </a>
-                </div>
-            </div>
-        </section>
+        <div class="gallery-wrapper">
+         <button class="arrow left">&#10094;</button>
 
-        <section class="gallery-container">
-            <h2>Галерея работ</h2>
-            <div class="gallery-track">
-                <img src="./img/Gallery1.jpg" alt="Работа 1">
-                <img src="./img/Gallery2.jpg" alt="Работа 2">
-                <img src="./img/Gallery3.jpg" alt="Работа 3">
-                <img src="./img/Gallery4.jpg" alt="Работа 4">
-                <img src="./img/Gallery5.jpg" alt="Работа 5">
-                <img src="./img/Gallery6.jpg" alt="Работа 6">
-                <img src="./img/Gallery7.jpg" alt="Работа 7">
-                <img src="./img/Gallery1.jpg" alt="Работа 1-2">
-                <img src="./img/Gallery2.jpg" alt="Работа 2-2">
-                <img src="./img/Gallery3.jpg" alt="Работа 3-2">
-                <img src="./img/Gallery4.jpg" alt="Работа 4-2">
-                <img src="./img/Gallery5.jpg" alt="Работа 5-2">
-                <img src="./img/Gallery6.jpg" alt="Работа 6-2">
-                <img src="./img/Gallery7.jpg" alt="Работа 7-2">
-            </div>
-            
-            <script>
-                const track = document.getElementById("gallery-track");
+          <div class="gallery-track" id="gallery-track">
+            <div class="gallery-item"><img src="img/gallery1.jpg" alt="Image 1"></div>
+            <div class="gallery-item"><img src="img/gallery2.jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="img/gallery3.jpg" alt="Image 3"></div>
+            <div class="gallery-item"><img src="img/gallery4.jpg" alt="Image 4"></div>
+            <div class="gallery-item"><img src="img/gallery5.jpg" alt="Image 5"></div>
+            <div class="gallery-item"><img src="img/gallery6.jpg" alt="Image 6"></div>
+          </div>
 
-                let isDown = false;
-                let startX;
-                let scrollLeft;
+          <button class="arrow right">&#10095;</button>
+         </div>
+    </section>
 
-                track.addEventListener("mousedown", (e) => {
-                isDown = true;
-                track.classList.add("active");
-                startX = e.pageX - track.offsetLeft;
-                scrollLeft = track.scrollLeft;
-                });
+    <!-- Обучение -->
+    <section class="courses" data-aos="fade-up">
+      <h2>Обучение</h2>
+      <details><summary>Курс по наращиванию волос</summary><p>Продолжительность: 2 дня. Стоимость: 18 000 ₽...</p></details>
+      <details><summary>Курс по наращиванию ресниц</summary><p>Продолжительность: 1 день. Стоимость: 12 000 ₽...</p></details>
+    </section>
 
-                track.addEventListener("mouseleave", () => {
-                isDown = false;
-                track.classList.remove("active");
-                });
-
-                track.addEventListener("mouseup", () => {
-                isDown = false;
-                track.classList.remove("active");
-                });
-
-                track.addEventListener("mousemove", (e) => {
-                if (!isDown) return;
-                e.preventDefault();
-                const x = e.pageX - track.offsetLeft;
-                const walk = (x - startX) * 2;
-                track.scrollLeft = scrollLeft - walk;
-                });
-
-                track.addEventListener("touchstart", (e) => {
-                isDown = true;
-                startX = e.touches[0].pageX - track.offsetLeft;
-                scrollLeft = track.scrollLeft;
-                });
-
-                track.addEventListener("touchend", () => {
-                isDown = false;
-                });
-
-                track.addEventListener("touchmove", (e) => {
-                if (!isDown) return;
-                const x = e.touches[0].pageX - track.offsetLeft;
-                const walk = (x - startX) * 2;
-                track.scrollLeft = scrollLeft - walk;
-                });
-            </script>
-        </section>
-
-        <section class="courses">
-            <h2>Обучение</h2>
-            <details>
-                <summary>Курс по наращиванию волос</summary>
-                <p>Продолжительность: 2 дня. Стоимость: 18 000 ₽. Включено: теория, практика, сертификат.</p>
-            </details>
-            <details>
-                <summary>Курс по наращиванию ресниц</summary>
-                <p>Продолжительность: 1 день. Стоимость: 12 000 ₽. Включено: материалы, методика, отработка на модели.</p>
-            </details>
-        </section>
-
-        <section class="calculator">
-            <h2>Калькулятор услуг</h2>
-            <div class="uCalc_469670"></div>
-            <script> var widgetOptions469670 = { bg_color: "transparent" }; 
+    <!-- Калькулятор -->
+     <section class="calculator" data-aos="fade-up">
+      <h2>Калькулятор услуг</h2>
+      <div class="uCalc_469670"></div>
+      <script> var widgetOptions469670 = { bg_color: "transparent" }; 
             (function() { var a = document.createElement("script"), h = "head"; 
             a.async = true; 
             a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=469670&t="+Math.floor(new Date()/18e5);
             document.getElementsByTagName(h)[0].appendChild(a) })();
-
             </script>
-        </section>
+    </section>
 
-        <!-- КОНТАКТЫ -->
-        <section class="contacts">
-            <h2>Контакты</h2>
-            <p>
-                <img class="icon" src="./img/call1.png" alt="call" />
-                <a href="tel:+79777013107">+7 977 701-31-07</a>
-            </p>
-            <p>
-                <img class="icon" src="./img/inst1.png" alt="Instagram" />
-                <a href="https://instagram.com/alexandra.bosco.o/" target="_blank">@alexandra.bosco.o</a>
-            </p>
-            <p>
-                <img class="icon" src="./img/teleg1.png" alt="Telegram" />
-                <a href="https://t.me/alexandra_bosco" target="_blank">@alexandra_bosco</a>
-            </p>
-            <p>
-                <img class="icon" src="./img/dikidi.png" alt="Telegram" />
-                <a href="https://dikidi.net/1883467 " target="_blank">Alexandra Bosco</a>
-            </p>
-        </section>
+    <!-- Контакты -->
+    <section class="contacts" data-aos="fade-up">
+      <h2>Контакты</h2>
+      <p><img class="icon" src="./img/call1.png" alt="call"/><a href="tel:+79777013107">+7 977 701‑31‑07</a></p>
+      <p><img class="icon" src="./img/inst1.png" alt="Instagram"/><a href="https://instagram.com/alexandra.bosco.o/" target="_blank">@alexandra.bosco.o</a></p>
+      <p><img class="icon" src="./img/teleg1.png" alt="Telegram"/><a href="https://t.me/alexandra_bosco" target="_blank">@alexandra_bosco</a></p>
+      <p><img class="icon" src="./img/dikidi.png" alt="Dikidi"/><a href="https://dikidi.net/1883467" target="_blank">Записаться</a></p>
+    </section>
+  </main>
 
+  <footer data-aos="fade-up" style="text-align:center; padding:20px; background:#ccc;">
+    © 2025 Alexandra Bosco | Все права защищены.
+  </footer>
 
-    </main>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
-    <!-- ПОДВАЛ -->
-    <footer style="text-align:center; padding:20px; background-color:#ccc;">
-        © 2025 Alexandra Bosco | Студия наращивания. Все права защищены.
-    </footer>
+  <script>
+    const track = document.getElementById('gallery-track');
+    const leftBtn = document.querySelector('.arrow.left');
+    const rightBtn = document.querySelector('.arrow.right');
 
-    <!-- JS -->
-    <script>
-        function showInfo(element) {
-            element.querySelector('.info').style.display = 'flex';
+    // Стрелки прокрутки
+    leftBtn.addEventListener('click', () => {
+      track.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+      track.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+
+    // Автопрокрутка
+    let autoScroll = setInterval(() => {
+      track.scrollBy({ left: 1, behavior: 'smooth' });
+      if (track.scrollLeft + track.clientWidth >= track.scrollWidth) {
+        track.scrollTo({ left: 0 });
+      }
+    }, 30);
+
+    // Остановка автопрокрутки при наведении
+    track.addEventListener('mouseenter', () => clearInterval(autoScroll));
+    track.addEventListener('mouseleave', () => {
+      autoScroll = setInterval(() => {
+        track.scrollBy({ left: 1, behavior: 'smooth' });
+        if (track.scrollLeft + track.clientWidth >= track.scrollWidth) {
+          track.scrollTo({ left: 0 });
         }
-        function hideInfo(element) {
-            element.querySelector('.info').style.display = 'none';
-        }
-    </script>
-
-    
-
+      }, 30);
+    });
+</script>
+</body>
 </html>
