@@ -122,9 +122,8 @@ img {
     display: flex;
 }
 .title-eyelashes {
-    padding: 10px;
     text-align: center;
-    background-color: #fff;
+    background-color: #dbdbdb;
     font-weight: bold;
     font-size: 1em;
 }
@@ -296,3 +295,4 @@ footer {
         padding: 20px;
     }
 }
+
