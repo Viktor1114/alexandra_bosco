@@ -209,7 +209,7 @@ img {
 }
 
 /* === МОБИЛЬНАЯ АДАПТАЦИЯ === */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .gallery-item {
         width: 220px;
         height: 150px;
@@ -276,7 +276,7 @@ footer {
 }
 
 /* === АДАПТИВ === */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .hero-content {
         font-size: 36px;
         text-align: center;
