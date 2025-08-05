@@ -98,7 +98,7 @@ img {
     transform: translateY(-5px);
 }
 .service img, .service-eyelashes img {
-    width: 100%;
+    width: auto;
     border-radius: 10px;
 }
 .service .info, .service-eyelashes .info-eyelashes {
@@ -142,7 +142,7 @@ img {
 .gallery-wrapper {
     position: relative;
     overflow: hidden;
-    max-width: 100%;
+    max-width: auto;
 }
 .gallery-track {
     display: flex;
@@ -161,8 +161,8 @@ img {
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 .gallery-item img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     object-fit: cover;
     display: block;
     transition: transform 0.4s ease;
@@ -209,7 +209,7 @@ img {
 }
 
 /* === МОБИЛЬНАЯ АДАПТАЦИЯ === */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .gallery-item {
         width: 220px;
         height: 150px;
@@ -276,7 +276,7 @@ footer {
 }
 
 /* === АДАПТИВ === */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .hero-content {
         font-size: 36px;
         text-align: center;
