@@ -155,7 +155,7 @@ img {
 .gallery-item {
     flex: 0 0 auto;
     width: 500px;
-    height: 400px;
+    height: 600px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -212,7 +212,7 @@ img {
 @media (max-width: 768px) {
     .gallery-item {
         width: 220px;
-        height: 150px;
+        height: 250px;
     }
     .arrow {
         font-size: 20px;
@@ -295,6 +295,7 @@ footer {
         padding: 20px;
     }
 }
+
 
 
 
