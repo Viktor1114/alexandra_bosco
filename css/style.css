@@ -276,7 +276,7 @@ footer {
 }
 
 /* === АДАПТИВ === */
-@media (max-width: auto) {
+@media (max-width: 768px) {
     .hero-content {
         font-size: 36px;
         text-align: center;
@@ -295,5 +295,6 @@ footer {
         padding: 20px;
     }
 }
+
 
 
