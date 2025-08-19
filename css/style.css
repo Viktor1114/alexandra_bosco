@@ -59,8 +59,8 @@ img {
     padding: 10px 0;
 }
 .hero-item img {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     filter: drop-shadow(0 2px 3px rgba(0,0,0,0.6));
     transition: transform 0.3s ease;
 }
@@ -296,6 +296,7 @@ footer {
         padding: 20px;
     }
 }
+
 
 
 
