@@ -88,7 +88,7 @@ img {
 }
 .service, .service-eyelashes {
     position: relative;
-    width: 280px;
+    width: auto;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -295,6 +295,7 @@ footer {
         padding: 20px;
     }
 }
+
 
 
 
